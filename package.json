@@ -1,0 +1,19 @@
+{
+  "name": "polymer-blocks",
+  "version": "1.0.0",
+  "description": "A Sandbox Polymer Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwalker86/polymer-blocks.git"
+  },
+  "author": "Cyrus Rhett Walker II",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwalker86/polymer-blocks/issues"
+  },
+  "homepage": "https://github.com/cwalker86/polymer-blocks#readme"
+}
