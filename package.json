@@ -4,7 +4,7 @@
   "description": "A Sandbox Polymer Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/cwalker86/polymer-blocks#readme",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
   }
 }
