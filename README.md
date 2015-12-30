@@ -1,4 +1,3 @@
-
 ## Polymer driven Express App 
 ### Serve the Application with Express
 - [ ] Develop a testing environment with mocha
@@ -10,7 +9,6 @@
 ### TODO :
 - [ ] 
 - [ ] 
-- [ ]
 - [ ] 
 - [ ] 
 - [ ] 

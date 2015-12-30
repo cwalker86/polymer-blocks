@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cwalker86/polymer-blocks/issues"
   },
-  "homepage": "https://github.com/cwalker86/polymer-blocks#readme"
+  "homepage": "https://github.com/cwalker86/polymer-blocks#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
