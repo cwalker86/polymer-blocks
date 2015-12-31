@@ -4,7 +4,8 @@
   "description": "A Sandbox Polymer Application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha -w app.js test.js",
+    "start": "./bin/www"
   },
   "repository": {
     "type": "git",
