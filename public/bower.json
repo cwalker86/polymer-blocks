@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/cwalker86/polymer-blocks",
+  "authors": [
+    "Cyrus Rhett Walker II <rhettwalker86@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.3"
+  }
+}

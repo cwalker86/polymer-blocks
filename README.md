@@ -11,11 +11,11 @@
 - [ ] 
 
 ### Design the Shell of the Polymer SPA 
-- [ ] Install bower package manager
-- [ ] Create initial file directory structure
+- [x] Install bower package manager
+- [x] Create initial file directory structure
 - [ ] Develop AJAX calls to server 'cities/i'
-- [ ] 
-- [ ] 
+- [x] Install Polymer
+- [x] Serve index.html with Polyer Resource
 
 ### TODO : 
 - [ ] 
