@@ -39,7 +39,7 @@
   <template>
     <paper-header-panel class="flex layout vertical">
       <paper-toolbar>
-        <div class="title flex">Tiny App</div>
+        <div class="title flex">Polymer App</div>
         <paper-icon-button icon="settings" on-tap="showSettings"></paper-icon-button>
       </paper-toolbar>
       <iron-ajax auto url="/cities" handle-as="json" last-response="{{response}}"></iron-ajax>
@@ -52,6 +52,7 @@
               <img src="http://placehold.it/80x80">
               <img src="http://placehold.it/80x80">
             </div>
+            <h3>City:</h3>
             <p>{{item}}</p>
           </div>
         </div>
