@@ -1,0 +1,65 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="blog-post">
+  <template>
+    <!-- data binding magic in local DOM -->
+    <div>{{greeting}}</div>
+    <div class="blog-post">
+      <h2>Title: {{postTitle}}</h2>
+      <content select="post-content"></content>
+    </div>
+  </template>
+  <script>
+    // element registration
+    Polymer({
+      is: "blog-post",
+
+      // add props and methods on element's prototype
+      properties: {
+        // declare properties for element's public API
+        greeting: {
+          type: String,
+          value: "Greetings, and prosperity to you sir!"
+        },
+        postTitle: {
+          type: String,
+          // Default title unless set from component
+          value: "Some Title"
+        }
+
+      }
+
+    });
+  </script>
+  </dom-module>
+
+<dom-module id="post-title">
+  <template>
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+    <div>
+      <h2><content></content></h2>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: "post-title"
+    });
+  </script>
+</dom-module>
+
+<dom-module id="post-content">
+  <template>
+    <div>
+      <content></content>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: "post-content"
+    });
+  </script>
+</dom-module>

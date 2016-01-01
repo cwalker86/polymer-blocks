@@ -1,0 +1,17 @@
+<link rel="import" href="../bower_component/polymer/polymer.html" />
+
+<dom-module id="editable-item">
+  <template>
+    <h2>{{value}}</h2>
+    <input type="text" value="{{value::input}}" />
+    <button on-click="reset">Reset</button>
+  </template>
+  <script>
+    Polymer({
+      is: "editable-item",
+      reset: function () {
+        this.value = "Reset";
+      }
+    });
+  </script>
+</dom-module>

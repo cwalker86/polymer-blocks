@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Polymer Application Demo</title>
   <meta charset="UTF-8">
-  <script src="../bower_components/webcomponentsjs/webcomponents-lite.js" charset="utf-8"></script>
-  <link rel="import" href="../elements/hello-world.html"/>
+
+  <!--Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    window.Polymer = window.Polymer || {};
+    window.Polymer.dom = "shadow";
+  </script>
+
+  <!-- Web Components -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/neon-animation/neon-animated-pages.html">
+  <link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+  <link rel="import" href="elements/list-page/list-page.html">
+  <link rel="import" href="elements/settings-page/settings-page.html">
+
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-  <hello-world></hello-world>
+<body class="fullbleed layout vertical" unresolved>
+  <template is="dom-bind" id="app">
+    <neon-animated-pages class="flex" selected="[[selected]]">
+      <list-page></list-page>
+      <settings-page></settings-page>
+    </neon-animated-pages>
+  </template>
+
+  <script>
+    var app = document.querySelector('#app');
+    app.selected = 0;
+
+    document.addEventListener('show-settings', function() {
+      app.selected = 1;
+    });
+
+    document.addEventListener('show-list', function () {
+      app.selected = 0;
+    });
+  </script>
 </body>
 </html>

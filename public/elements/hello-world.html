@@ -2,7 +2,11 @@
 
 <dom-module id="hello-world">
     <template>
-      <h1>Erin, I just wanted to let you know that I'm having a blast working with you. I hope to show you something cool by the end of the day.</h1>
+      <h1>Hello World</h1>
+      <content select="p"></content>
+      <div>
+        <content select="ul[data-foo='foo']"></content>
+      </div>
     </template>
     <script>
       Polymer({
