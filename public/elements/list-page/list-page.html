@@ -42,12 +42,18 @@
         <div class="title flex">Polymer App</div>
         <paper-icon-button icon="settings" on-tap="showSettings"></paper-icon-button>
       </paper-toolbar>
+      <!-- ajax call to 'localhost:3000/cities -->
+      <!-- responds with ["New YorK","Miami","...", ... ] -->
+      <!-- exposes response data -->
       <iron-ajax auto url="/cities" handle-as="json" last-response="{{response}}"></iron-ajax>
+
+      <!-- displays a container with each response from ajax -->
       <template is="dom-repeat" items="[[response]]">
         <div class="container">
           <div class="content">
             <h1>Oh hai!</h1>
             <div class="row layout horizontal around-justified">
+              <!-- Placeholder Image -->
               <img src="http://placehold.it/80x80">
               <img src="http://placehold.it/80x80">
               <img src="http://placehold.it/80x80">
